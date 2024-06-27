@@ -1,0 +1,21 @@
+.about {
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+
+    background-color: var(--II);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: var(--primary);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 50px;
+    padding: 50px;
+}
+
+.card .title {
+    margin-bottom: 20px;
+}

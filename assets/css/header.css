@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    max-width: var(--width);
+
+    position: absolute;
+    top: 35px;
+
+    border: 1px solid var(--IV);
+    border-radius: 100px;
+
+    background-color: var(--II);
+}
+
+.header .logo {
+    width:130px;
+}
+
+.header nav {
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px 10px 30px;
+}
+
+.header .links {
+    list-style: none;
+}
+
+.header .links li {
+    transition: ease-in-out .3s;
+}
+
+.header .links li:hover {
+    background-color: var();
+    transform: translateY(-2px);
+}
+
+.header .links li a{
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.header .links li a:hover {
+    color: var(--secondary);
+}
+
+.header .links .selected a {
+    background-color: var(--gray);
+    color: var(--secondary);
+}
+
+.header .links a {
+    text-decoration: none;
+    color: var(--white);
+}

@@ -1,0 +1,18 @@
+.btn_primary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: ease-in-out .3s;
+
+    border: 1px solid;
+    border-radius: 20px;
+
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.btn_primary:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+
+    border: 1px solid var(--secondary);
+}
