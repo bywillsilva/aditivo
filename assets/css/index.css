@@ -35,7 +35,7 @@ button {
     --text: .8rem;
 
     /* Width page*/
-    --width: 1200px;
+    --width: 80%;
 }
 
 .title {
