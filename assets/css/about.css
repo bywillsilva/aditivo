@@ -1,6 +1,6 @@
 .about {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--width);
     justify-content: space-between;
 
     background-color: var(--II);
