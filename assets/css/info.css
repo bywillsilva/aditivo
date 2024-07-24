@@ -1,6 +1,5 @@
-.about {
+.info {
     width: 100%;
-    height: 60vh;
 
     max-width: var(--width);
     justify-content: space-between;
@@ -13,26 +12,31 @@
 
     border-radius: 20px;
     padding: 30px;
+    margin-top: 50px;
 }
 
-
-.about .content_right {
+.info .content_left {
     position: relative;
+    width: max-content;
 }
 
-.about .card {
+.info .card {
     position: absolute;
-    right: 0px;
     
     background-color: var(--primary);
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 50px;
-
+    
     padding: 50px;
-    width: max-content;
+    width:max-content;
 }
 
-.about .card .title {
+.info .card .title {
     margin-bottom: 20px;
+}
+
+.info img {
+    width: 100%;
+    height: 100%;
 }

@@ -1,0 +1,6 @@
+.dot::before {
+    content: ".";
+    font-size: 30px;
+    margin: 0 1px;
+    color: var(--IV)
+}

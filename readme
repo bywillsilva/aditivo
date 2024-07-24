@@ -1,0 +1,12 @@
+<div class="content_right"><!--content_right-->
+    <div class="carrousel flex_row"><!--carrousel-->
+        <div class="arrow"></div>
+        <div class="dots flex_row">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="arrow"></div>
+    </div><!--carrousel-->
+</div><!--content_right-->

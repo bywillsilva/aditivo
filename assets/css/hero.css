@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    height: calc(100vh + 30px);
+    height: 100vh;
 
     align-items: center;
     justify-content: center;
@@ -47,8 +47,4 @@
 
 .text_content p {
     margin-bottom: 20px;
-}
-
-.text_content button {
-    max-width: 125px;
 }

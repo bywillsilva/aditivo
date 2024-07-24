@@ -1,0 +1,41 @@
+.services {
+    width: 100%;
+    max-width: var(--width);
+
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.services .text_content {
+    margin-bottom: 20px;
+}
+
+.services .content_cards  {
+    align-items: center;
+}
+
+.services .content_cards .row:nth-child(1) {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .card {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 50px;
+}
+
+.services .card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.services hr {
+    margin: 0 20px;
+    height: 150px;
+    border: 1px solid;
+    border-bottom: none;
+    border-color: var(--III);
+}

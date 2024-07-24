@@ -24,7 +24,7 @@ button {
 :root {
     --primary: #1A1A1A;
     --secondary: #6CC4EE;
-    --II: #1C1C1C;
+    --II: #1D1D1D;
     --III: #1E1E1E;
     --IV: #262626;
     --gray: #262626;
@@ -32,18 +32,26 @@ button {
 
     /* Font size */
     --title: 2rem;
+    --subtitle: 1rem;
     --text: .8rem;
 
     /* Width page*/
-    --width: 80%;
+    --width: 1200px;
 }
 
 .title {
     font-size: var(--title);
 }
 
+.subtitle {
+    font-size: var(--subtitle);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
 .text {
     font-size: var(--text);
+    font-weight: 300;
 }
 
 .flex_column {

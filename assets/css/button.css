@@ -1,4 +1,5 @@
 .btn_primary {
+    width: fit-content;
     background-color: var(--secondary);
     color: var(--primary);
     transition: ease-in-out .3s;
