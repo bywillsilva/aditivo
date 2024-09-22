@@ -17,7 +17,7 @@
     /* centering config */
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
     max-width: var(--width);
 }
 
