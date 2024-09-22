@@ -1,0 +1,25 @@
+@media (max-width: 1100px) {
+    .hero {
+        height: auto;
+        width: 100%;
+        background-size: 150%;
+    }
+
+    .hero .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .hero .content_left {
+        align-items: center;
+    }
+
+    .hero .content_right {
+        display: none;
+    }
+
+    .hero .text_content {
+        align-items: center;
+        text-align: justify;
+    }
+}

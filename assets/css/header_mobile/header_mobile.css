@@ -1,0 +1,81 @@
+.header_mobile {
+    /* color */
+    background-color: var(--II);
+
+    /* centering config */
+    position: absolute;
+    top: 35px;
+    width: 90%;
+    max-width: var(--width);
+
+    /* border */
+    border: 1px solid var(--IV);
+    border-radius: 100px;
+
+    box-sizing: border-box;
+}
+
+.header_mobile nav {
+    /* centering config */ 
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px 10px 30px;
+}
+
+.header_mobile .logo {
+    /* centering config */
+    width:150px;
+}
+
+/* header_mobile list */
+.header_mobile .links {
+    display: none;
+    background-color: var(--primary);
+    position: absolute;
+    padding: 40px;
+    width: 112%;
+    height: 100dvh;
+    top: -37px;
+    left: 50%;
+    transform: translate(-50%);
+
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.links .btn_primary {
+    margin-top: 20px;
+}
+
+.header_mobile .links li {
+    padding: 10px 0;
+    
+    transition: ease-in-out .3s;
+}
+
+.header_mobile .links li:hover {
+    transform: translateY(-2px);
+}
+
+.header_mobile .links li a{
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    transition: ease-in-out .3s;
+}
+
+.header_mobile .links li a:hover {
+    color: var(--secondary);
+}
+
+.header_mobile .links .selected a {
+    color: var(--secondary);
+    background-color: var(--gray);
+}
+
+.header_mobile .links a {
+    color: var(--white);
+    text-decoration: none;
+}

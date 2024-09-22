@@ -1,0 +1,43 @@
+/* primary button config */
+.btn_burger {
+    /* color */
+    color: var(--primary);
+    background-color: var(--secondary);
+
+    /* centering config */
+    width: fit-content;
+    padding: 10px 15px;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    /* border config */
+    border: 1px solid;
+    border-radius: 20px;
+    
+    /* others */
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+}
+
+.btn_burger:hover {
+    /* color */
+    color: var(--secondary);
+    background-color: var(--primary);
+
+    /* border */
+    border: 1px solid var(--secondary);
+}
+
+/* hr config */
+.btn_burger hr {
+    /* centering config */
+    width: 20px;
+    margin: 2px;
+}
+
+/* last hr config */
+.btn_burger hr:last-child {
+    /* centering config */
+    width: 45%;
+}

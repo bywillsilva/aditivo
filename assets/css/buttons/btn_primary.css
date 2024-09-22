@@ -1,0 +1,28 @@
+/* primary button config */
+.btn_primary {
+    /* color */
+    color: var(--primary);
+    background-color: var(--secondary);
+
+    /* centering config */
+    width: fit-content;
+    padding: 12px 25px;
+    
+    /* border config */
+    border: 1px solid;
+    border-radius: 20px;
+    
+    /* others */
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+}
+
+.btn_primary:hover{
+    /* color */
+    color: var(--secondary);
+    background-color: var(--primary);
+
+    /* border */
+    border: 1px solid var(--secondary);
+}

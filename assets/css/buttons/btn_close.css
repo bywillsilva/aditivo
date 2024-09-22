@@ -1,0 +1,31 @@
+/* primary button config */
+.btn_close {
+    /* color */
+    color: var(--primary);
+    background-color: var(--secondary);
+
+    /* centering config */
+    width: fit-content;
+    padding: 10px 15px;
+    text-align: center;
+    align-self: flex-end;
+    justify-content: space-around;
+    
+    /* border config */
+    border: 1px solid;
+    border-radius: 20px;
+    
+    /* others */
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+}
+
+.btn_close:hover {
+    /* color */
+    color: var(--secondary);
+    background-color: var(--primary);
+
+    /* border */
+    border: 1px solid var(--secondary);
+}

@@ -1,0 +1,65 @@
+.header {
+    /* color */
+    background-color: var(--II);
+
+    /* centering config */
+    position: absolute;
+    top: 35px;
+    width: 90%;
+    max-width: var(--width);
+
+    /* border */
+    border: 1px solid var(--IV);
+    border-radius: 100px;
+
+    box-sizing: border-box;
+}
+
+.header nav {
+    /* centering config */ 
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px 10px 30px;
+}
+
+.header .logo {
+    /* centering config */
+    width:150px;
+}
+
+/* header list */
+.header .links {
+    list-style: none;
+}
+
+.header .links li {
+    transition: ease-in-out .3s;
+}
+
+.header .links li:hover {
+    transform: translateY(-2px);
+}
+
+.header .links li a{
+    padding: 10px 15px;
+    margin: 0 2px;
+
+    border-radius: 20px;
+
+    transition: ease-in-out .3s;
+}
+
+.header .links li a:hover {
+    color: var(--secondary);
+}
+
+.header .links .selected a {
+    color: var(--secondary);
+    background-color: var(--gray);
+}
+
+.header .links a {
+    color: var(--white);
+    text-decoration: none;
+}

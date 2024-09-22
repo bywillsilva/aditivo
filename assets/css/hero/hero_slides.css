@@ -1,0 +1,50 @@
+.hero .content_right {
+    overflow: hidden;
+}
+
+.hero .content_right .content_slides {
+    width: calc(500px * 7);
+    margin-bottom: 15px;
+    transition: ease-in-out 1s;
+    overflow: hidden;
+}
+
+.hero .content_slides img {
+    width: 500px;
+
+    /* border */
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;   
+
+    transition: ease-in-out 1s;
+}
+
+/* pass stages */
+.one {
+    transform: translateX(0px);
+}
+
+.two {
+    transform: translateX(-500px);
+}
+
+.three {
+    transform: translateX(-1000px);
+}
+
+.four {
+    transform: translateX(-1500px);
+}
+
+.five {
+    transform: translateX(-2000px);
+}
+
+.six {
+    transform: translateX(-2500px);
+}
+
+.seven {
+    transform: translateX(-3000px);
+}

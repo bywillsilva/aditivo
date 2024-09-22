@@ -1,0 +1,31 @@
+/* importing font */ @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    /* font config */
+    font-family: "Lexend", sans-serif;
+    font-style: normal;
+    font-size: var(--text);
+}
+
+:root {
+    /* font size */
+    --title: 2.1rem;
+    --subtitle: 1.1rem;
+    --text: .9rem;
+}
+
+/* font sizes config */
+.title {
+    font-size: var(--title);
+}
+
+.subtitle {
+    font-size: var(--subtitle);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: var(--text);
+    font-weight: 300;
+}

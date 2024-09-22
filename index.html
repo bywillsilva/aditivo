@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links-->
+    <link rel="stylesheet" href="./assets/css/buttons/btn_primary.css">
+    <link rel="stylesheet" href="./assets/css/buttons/btn_burger.css">
+    <link rel="stylesheet" href="./assets/css/buttons/btn_close.css">
+        <!--header-->
+            <link rel="stylesheet" href="./assets/css/header/header.css">
+            <link rel="stylesheet" href="./assets/css/header/header_config.css">
+        <!--header-->
+        <!--header_mobile-->
+            <link rel="stylesheet" href="./assets/css/header_mobile/header_mobile.css">
+            <link rel="stylesheet" href="./assets/css/header_mobile/header_mobile_config.css">
+        <!--header_mobile-->
+        <!--hero-->
+            <link rel="stylesheet" href="./assets/css/hero/hero.css">
+            <link rel="stylesheet" href="./assets/css/hero/hero_config.css">
+            <link rel="stylesheet" href="./assets/css/hero/hero_carrossel.css">
+            <link rel="stylesheet" href="./assets/css/hero/hero_slides.css">
+            <link rel="stylesheet" href="./assets/css/hero/hero_config.css">
+        <!--hero-->
+        <!--config-->
+        <link rel="stylesheet" href="./assets/css/config/global_config.css">
+        <link rel="stylesheet" href="./assets/css/config/fonts_config.css">
+        <link rel="stylesheet" href="./assets/css/config/palette_config.css">
+        <!--config-->
+    <!--links-->
+    <title>Aditivo Contabilidade</title>
+</head>
+<body class="flex_column" id="home">
+    <header class="header"><!--header-->
+        <nav class="flex_row"><!--nav-->
+            <div>
+                <img class="logo" src="./assets/images/header/logo.png" alt="Aditivo logo">
+            </div>
+            <ul class="links flex_row"><!--links-->
+                <li class="selected"><a href="#home">Home</a></li>
+                <li><a href="./assets/html/about_page.html">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="./assets/html/living.html">Instalações</a></li>
+            </ul><!--links-->
+            <div class="action"><!--action-->
+                <a href="https://onvio.com.br" target="_blank"><button class="btn_primary">Acessar Onvio</button></a>
+            </div><!--action-->
+        </nav><!--nav-->
+    </header><!--header-->
+
+    <header class="header_mobile"><!--header-->
+        <nav class="flex_row"><!--nav-->
+            <div>
+                <img class="logo" src="./assets/images/header/logo.png" alt="Aditivo logo">
+            </div>
+            <ul class="links flex_column" id="links_mobile"><!--links-->
+                <button class="btn_close" id="btn_close">X</button>
+                <li class="selected"><a href="#home">Home</a></li>
+                <li><a href="./assets/html/about_page.html">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="./assets/html/living.html">Instalações</a></li>
+                <a href="https://onvio.com.br" target="_blank"><button class="btn_primary">Acessar Onvio</button></a>
+            </ul><!--links-->
+            <div class="action"><!--action-->
+                <button class="btn_burger flex_column" id="btn_burger"><hr><hr><hr></button>
+            </div><!--action-->
+        </nav><!--nav-->
+    </header><!--header-->
+
+    <section class="hero flex_row"><!--hero-->
+        <div class="content flex_row"><!--content-->
+            <div class="content_left flex_column"><!--content_left-->
+                <div class="verified flex_row"><!--verified-->
+                    <img src="./assets/icons/hero/verified.png" alt="Ícone de verificação"></img>
+                    <p class="text">Aditivo Contabilidade</p>
+                </div><!--verified-->
+    
+                <div class="text_content flex_column"><!--text_content-->
+                    <h1 class="title">O Aditivo que a sua empresa necessita para <span class="title" style="color: var(--secondary);">Crescer Mais</span></h1>
+                    <p class="text">Desde 1996, a Aditivo Contabilidade cuida com exelência das suas obrigações,
+                        transformando desafios em soluções e facilitando a tragetória do seu negócio rumo
+                        ao sucesso.
+                    </p><!--text-->
+                    <a class="btn_primary" href="./assets/html/about_page.html">Saiba mais</a>
+                </div><!--text_content-->
+            </div><!--content_left-->
+
+            <div class="content_right"><!--content_right-->
+                <div class="content_slides one flex_row">
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_1.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_2.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_3.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_4.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_5.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_6.png" alt="" srcset="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/images/hero/hero_7.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="carrossel flex_row"><!--carrossel-->
+                    <img class="arrow" src="./assets/icons/hero/arrow right.png" alt="" srcset="">
+
+                    <div class="flex_row"><!--dots_content-->
+                        <button class="dot selected"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                    </div><!--dots_content-->
+
+                    <img class="arrow" src="./assets/icons/hero/arrow left.png" alt="" srcset="">
+                </div><!--carrossel-->
+            </div><!--content_right-->
+        </div><!--content-->
+    </section><!--hero-->
+
+    <!--scripts-->
+        <!--header-->
+        <script src="./assets/js/buttons/btn_burger.js"></script>
+        <script src="./assets/js/buttons/btn_close.js"></script>
+        <!--header-->
+        <!--hero-->
+        <script src="./assets/js/hero/carrossel.js"></script>
+        <!--hero-->
+    <!--scripts-->
+</body>
+</html>
