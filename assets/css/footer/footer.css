@@ -98,6 +98,10 @@ footer a {
     cursor: pointer;
 }
 
+.footer .text {
+    width: fit-content;
+}
+
 .footer .text a{
     /* centering config */
     padding: 0 10px;
