@@ -1,0 +1,44 @@
+.content_mvv {
+    width: 90%;
+    max-width: var(--width);
+    margin-top: 100px;
+}
+
+.mission,
+.vision,
+.values {
+    align-items: center;
+}
+
+.mission .content_left,
+.values .content_left{
+    margin-right: 50px;
+}
+
+.vision .content_left{
+    margin-left: 50px;
+}
+
+.mvv .vision {
+    flex-direction: row-reverse;
+}
+
+.mvv .content_left {
+    padding: 30px 30px 0 30px;
+    border-radius: 20px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border: 1px solid var(--IV);
+    background-image: url('./../../images/mission_vision_values/mvv_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.mvv .content_left img {
+    width: 250px;
+}
+
+.mvv .title {
+    margin-bottom: 10px;
+}
