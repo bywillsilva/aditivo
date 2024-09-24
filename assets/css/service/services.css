@@ -1,0 +1,15 @@
+.services {
+    /* centerign config */
+    width: 90%;
+    max-width: var(--width);
+
+    /* others */
+    margin-top: 100px;
+}
+
+.services .content_cards  {
+    /* centerign config */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

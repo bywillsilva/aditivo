@@ -1,0 +1,16 @@
+@media (max-width: 1100px) {
+    .link .content_cards {
+        flex-direction: column;
+    }
+
+    .link .content_left {
+        /* centering config */
+        flex-direction: row !important;
+        overflow-x: auto;
+        margin: 0px 20px 30px 10px;
+    }
+
+    .link .content_left button {
+        margin: 0 5px;
+    }
+}

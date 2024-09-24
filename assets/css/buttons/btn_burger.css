@@ -22,7 +22,6 @@
 
 .btn_burger:hover {
     /* color */
-    color: var(--secondary);
     background-color: var(--primary);
 
     /* border */
@@ -34,6 +33,9 @@
     /* centering config */
     width: 20px;
     margin: 2px;
+
+    /* color */
+    color: var(--IV);
 }
 
 /* last hr config */

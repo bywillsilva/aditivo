@@ -1,0 +1,40 @@
+
+/* carrossel config */
+.carrossel {
+    /* centering config */
+    width: 90%;
+    padding: 0 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    /* border */
+    border-radius: 20px;
+    border: 1px solid var(--IV)
+}
+
+/* dots config */
+.dot {
+    /* centering config */
+    width: 8px;
+    height: 8px;
+    margin: 11px 4px;
+
+    /* border */
+    border: none;
+    border-radius: 50px;
+    
+    /* others */
+    cursor: pointer;
+    background-color: var(--IV);
+}
+
+.carrossel .selected {
+    background-color: var(--secondary);
+}
+
+.carrossel img {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}

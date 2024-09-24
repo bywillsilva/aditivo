@@ -1,0 +1,25 @@
+.info {
+    /* centering config */
+    width: 90%;
+    padding: 30px;
+    max-width: var(--width);
+    margin-top: 100px;
+    justify-content: space-between;
+
+    /* background config */
+    background-color: var(--II);
+    background-image: url('./../../images/about/info_bg.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 100% 0%;
+
+    /* others */
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.info .content_left {
+    /* centering config */
+    position: relative;
+    display: flex;
+}

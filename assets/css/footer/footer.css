@@ -1,0 +1,131 @@
+footer {
+    /* color */
+    background-color: var(--II);
+
+    /* centering config */
+    width: 100%;
+    padding: 40px;
+    margin-top: 100px;
+    align-items: center;
+
+    /* others */
+    box-sizing: border-box;
+}
+
+footer .head {
+    align-items: center;
+}
+
+footer .logo {
+    /* centering config */
+    width:130px;
+    margin-bottom: 20px;
+}
+
+footer nav {
+    /* centering config */ 
+    padding: 10px 20px 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer list */
+footer .links {
+    list-style: none;
+}
+
+footer .links li {
+    transition: ease-in-out .3s;
+}
+
+footer .links li:hover {
+    transform: translateY(-2px);
+}
+
+footer .links li a{
+    padding: 10px 15px;
+    margin: 0 5px;
+
+    border-radius: 20px;
+
+    transition: ease-in-out .3s;
+}
+
+footer .links li a:hover {
+    color: var(--secondary);
+}
+
+footer .links a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* second part footer */
+footer .body div {
+    margin: 0 10px;
+    align-items: center;
+}
+
+footer .body img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* third part footer */
+.footer {
+    background-color: var(--primary);
+
+    /* centering config */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    max-width: var(--width);
+
+    /* border */
+    border: 1px solid var(--IV);
+    border-radius: 100px;
+}
+
+.footer img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .text a{
+    /* centering config */
+    padding: 0 10px;
+    margin: 0 5px;
+
+    /* others */
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+}
+
+.footer a:hover {
+    color: var(--secondary);
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+footer hr {
+    /* centering config */
+    margin: 35px 0;
+    width: 100%;
+    max-width: var(--width);
+
+    /* border */
+    border: 1px solid;
+    border-bottom: none;
+    border-color: var(--IV);
+}

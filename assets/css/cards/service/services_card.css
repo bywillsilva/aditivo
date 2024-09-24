@@ -1,0 +1,25 @@
+/* card config */
+.services .card {
+    /* centering config */
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services .card img {
+    /* centering config */
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.services hr {
+    /* centering config */
+    margin: 0 20px;
+    height: 150px;
+
+    /* border */
+    border: 1px solid;
+    border-bottom: none;
+    border-color: var(--III);
+}

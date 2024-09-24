@@ -1,0 +1,24 @@
+/* btn asside */
+.btn_top {
+    /* color */
+    color: var(--secondary);
+    background-color: var(--primary);
+
+    /* centering config */
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 7px 8px 5px 7px;
+    
+    /* border config */
+    border: 1px solid;
+    border-radius: 50%;
+    
+    /* others */
+    cursor: pointer;
+    opacity: 0;
+}
+
+.btn_top img {
+    transform: rotate(-45deg);
+}

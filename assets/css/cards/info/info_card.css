@@ -1,0 +1,34 @@
+/* card config */
+.info .card {
+    /* centering config */
+    position:absolute;
+    flex: 1;
+    width: 500px;
+    padding: 50px;
+    
+    /* border */
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 50px;
+
+    /* others */
+    background-color: var(--primary);
+    box-sizing: border-box;
+    
+}
+
+.info .card .title {
+    font-size: calc(var(--title) + .3rem);
+    margin-bottom: 20px;
+}
+
+.info .card .text {
+    margin-bottom: 20px;
+}
+
+.info img {
+    width: 100%;
+    height: 100%;
+    max-height: 572px;
+    border-radius: 20px;
+}
