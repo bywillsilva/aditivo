@@ -36,6 +36,7 @@
 
     /* color */
     color: var(--IV);
+    background-color: var(--IV);
 }
 
 /* last hr config */

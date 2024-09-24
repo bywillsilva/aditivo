@@ -8,7 +8,7 @@
 
     /* background config */
     background-color: var(--II);
-    background-image: url('./../../images/about/info_bg.png');
+    background-image: url('./../../images/about/about_bg.png');
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 100% 0%;
@@ -22,4 +22,8 @@
     /* centering config */
     position: relative;
     display: flex;
+}
+
+#about .info {
+    margin-top: 150px;
 }
