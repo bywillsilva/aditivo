@@ -2,8 +2,8 @@
 .whatsapp {
     /* centering config */
     position: fixed;
-    bottom: 100px;
-    right: 49px;
+    bottom: 30px;
+    right: 30px;
     
     /* others */
     cursor: pointer;
