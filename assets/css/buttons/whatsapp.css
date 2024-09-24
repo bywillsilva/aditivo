@@ -1,0 +1,16 @@
+/* btn asside */
+.whatsapp {
+    /* centering config */
+    position: fixed;
+    bottom: 100px;
+    right: 49px;
+    
+    /* others */
+    cursor: pointer;
+}
+
+.whatsapp img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
