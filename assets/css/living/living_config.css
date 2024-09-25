@@ -1,0 +1,5 @@
+@media (max-width: 1100px) {
+    .content_pictures img {
+        max-width: 100%;
+    }
+}
