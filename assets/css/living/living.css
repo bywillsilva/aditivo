@@ -3,6 +3,7 @@
 }
 
 .content_pictures img {
-    width: 55%;
+    width: 100%;
+    max-width: 50%;
     flex: 1 1 650px;
 }
