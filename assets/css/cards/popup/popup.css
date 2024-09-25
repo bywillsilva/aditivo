@@ -4,7 +4,7 @@
     left: 50%;
     width: fit-content;
     display: none;
-    padding: 25px;
+    padding: 30px 40px;
     transform: translateX(-50%);
     flex-direction: column;
 
