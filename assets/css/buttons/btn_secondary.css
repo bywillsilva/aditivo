@@ -1,0 +1,29 @@
+/* secondary button config */
+.btn_secondary {
+    /* color */
+    color: var(--secondary);
+    background-color: transparent;
+
+    /* centering config */
+    width: fit-content;
+    padding: 12px 25px;
+    margin-right: 15px;
+    
+    /* border config */
+    border: 1px solid;
+    border-radius: 20px;
+    
+    /* others */
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    text-decoration: none;
+}
+
+.btn_secondary:hover{
+    /* color */
+    color: var(--white);
+    background-color: var(--primary);
+
+    /* border */
+    border: 1px solid var(--white);
+}

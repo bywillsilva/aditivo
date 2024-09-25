@@ -24,12 +24,17 @@
         <link rel="shortcut icon" href="./assets/icons/favicon/favicon.png" type="image/png">
     <!--meta tags-->
     <!--links-->
-    <link rel="stylesheet" href="./assets/css/buttons/btn_primary.css">
-    <link rel="stylesheet" href="./assets/css/buttons/btn_burger.css">
-    <link rel="stylesheet" href="./assets/css/buttons/btn_close.css">
-    <link rel="stylesheet" href="./assets/css/buttons/btn_link.css">
-    <link rel="stylesheet" href="./assets/css/buttons/btn_top.css">
-    <link rel="stylesheet" href="./assets/css/buttons/whatsapp.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_primary.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_burger.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_close.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_link.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_top.css">
+        <link rel="stylesheet" href="./assets/css/buttons/whatsapp.css">
+        <link rel="stylesheet" href="./assets/css/buttons/btn_secondary.css">
+        <!--popup-->
+        <link rel="stylesheet" href="./assets/css/cards/popup/popup.css">
+        <link rel="stylesheet" href="./assets/css/cards/popup/popup_config.css">
+        <!--popup-->
         <!--header-->
             <link rel="stylesheet" href="./assets/css/header/header.css">
             <link rel="stylesheet" href="./assets/css/header/header_config.css">
@@ -426,6 +431,16 @@
     <aside class="whatsapp">
         <a href="http://wa.me/+558440098201" target="_blank"><img src="./assets/icons/buttons/whatsapp.png" alt="" srcset=""></a>
     </aside>
+    <asside id="cookie-popup" class="cookie-popup">
+        <div class="flex_row cookie_title">
+            <img src="./assets/icons/popup/cookie.png" alt="">
+            <p class="text">Este site utiliza cookies para garantir que você obtenha a melhor experiência. <a href="./assets/html/cookies.html">Saiba mais</a></p>
+        </div>
+        <div class="flex_row cookie_actions">
+            <button id="reject-cookies" class="btn_secondary">Recusar</button>
+            <button id="accept-cookies" class="btn_primary">Aceitar</button>
+        </div>
+    </asside>
 
     <!--scripts-->
         <!--header-->
@@ -442,6 +457,9 @@
         <!--btn_top-->
         <script src="./assets/js/buttons/btn_top.js"></script>
         <!--btn_top-->
+        <!--popup-->
+        <script src="./assets/js/popup/popup.js"></script>
+        <!--popup-->
     <!--scripts-->
 </body>
 </html>
