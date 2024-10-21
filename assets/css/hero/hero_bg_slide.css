@@ -1,0 +1,53 @@
+.content_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    z-index: -1;
+
+    filter: opacity(0.2);
+}
+
+.content_bg .slides {
+    transition: ease-in-out 1s;
+    width: calc(100%*7);
+}
+
+.content_bg .slides img {
+    width: 100%;
+}
+
+
+/* pass stages */
+
+.one {
+    transform: translateX(-0%);
+}
+
+.two {
+    transform: translateX(calc(-100%/7));
+}
+
+.three {
+    transform: translateX(calc((-100%/7)*2));
+}
+
+.four {
+    transform: translateX(calc((-100%/7)*3));
+}
+
+.five {
+    transform: translateX(calc((-100%/7)*4));
+}
+
+.six {
+    transform: translateX(calc((-100%/7)*5));
+}
+
+.seven {
+    transform: translateX(calc((-100%/7)*6));
+}
