@@ -1,5 +1,5 @@
-@media(min-width: 1000px) {
+@media(min-width: 1100px) {
     .header_mobile {
-        display: none;
+        display: none !important;
     }
 }

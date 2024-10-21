@@ -1,6 +1,6 @@
-const dot = document.querySelectorAll('.hero .dot');
-const arrow = document.querySelectorAll('.hero .arrow');
-const content = document.querySelector('.hero .content_slides');
+let dot = document.querySelectorAll('.hero .dot');
+let arrow = document.querySelectorAll('.hero .arrow');
+let content = document.querySelector('.hero .content_slides');
 
 
 arrow[0].addEventListener('click', () => {
@@ -11,7 +11,7 @@ arrow[1].addEventListener('click', () => {
     nextSlide();
 })
 
-const nextDot = () => {
+let nextDot = () => {
     for (let i = 0; i < dot.length; i++) {
         if (dot[i].classList.contains('selected')) {
 
@@ -44,7 +44,7 @@ class Carrossel {
 
 let carr = new Carrossel();
 
-const prevSlide = () => {
+let prevSlide = () => {
     carr.stop();
 
     for (let i = 0; i < dot.length; i++) {
@@ -67,7 +67,7 @@ const prevSlide = () => {
     carr = new Carrossel();
 }
 
-const nextSlide = () => {
+let nextSlide = () => {
     carr.stop();
 
     for (let i = 0; i < dot.length; i++) {
@@ -95,7 +95,7 @@ for (let i = 0; i < dot.length; i++) {
     })
 }
 
-const removeCheck = () => {
+let removeCheck = () => {
     for (let i = 0; i < dot.length; i++) {
         if (dot[i].classList.contains('selected')) {
             dot[i].classList.remove('selected');
@@ -103,7 +103,7 @@ const removeCheck = () => {
     }
 }
 
-const checkSelectedDot = () => {
+let checkSelectedDot = () => {
     for (let i = 0; i < dot.length; i++) {
         if (dot[i].classList.contains('selected')) {
             switch (i) {

@@ -1,33 +1,33 @@
-
 const noticia_title = document.getElementById('noticia_title');
 const noticia_text = document.getElementById('noticia_text');
 const noticia_link = document.getElementById('noticia_link');
 
-let noticias = [];
-let noticiaAtual = 1;
+class Noticia {
+    constructor(data, link, titulo, descricao) {
+        this.data = data;
+        this.link = link;
+        this.titulo = titulo;
+        this.descricao = descricao;
+    }
+}
 
-fetch('https://servicodados.ibge.gov.br/api/v3/noticias/?busca=empresarial')
+let noticia;
+let noticias = [];
+
+let url = 'https://newsapi.org/v2/everything?' +
+          'q=empresarial&' +
+        //   'from=2024-10-05&' +
+          'sortBy=popularity&' +
+          'apiKey=55328aac8b954a94b71a265545300c65';
+
+const getNoticia = () => {
+    fetch(url)
     .then((res) => {
         return res.json()
     }).then((res) => {
-        let noticia = {
-            data: "",
-            link: "",
-            titulo: "",
-            descricao: ""
-        }
-
-        for (let i = 0; i < 5; i++) {
-            noticia.data = res.items[noticiaAtual].data_publicacao
-            noticia.link = res.items[noticiaAtual].link
-            noticia.titulo = res.items[noticiaAtual].titulo
-            noticia.descricao = res.items[noticiaAtual].introducao
-            noticias.push(noticia);
-        }
-
-        noticia_title.innerText = noticia.titulo;
-        noticia_text.innerText = noticia.descricao;
-        noticia_link.href = noticia.link;
-        console.log(noticias)
+        const news = res.items;
+        console.log(res)
     })
+}
 
+getNoticia();
