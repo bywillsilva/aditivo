@@ -13,19 +13,19 @@
 }
 
 .content_bg .slides {
-    display: flex; /* Certifique-se de que os slides estão em linha */
-    transition: transform 1s ease-in-out; /* Transição suave */
-    width: calc(100%*9); /* Ajustar para 100% do contêiner */
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: calc(100%*9);
 }
 
 .content_bg .slides .slide {
-    min-width: calc(100%/9); /* Cada slide ocupa 100% da largura do contêiner */
-    height: 100vh; /* Certifique-se de que o slide ocupa toda a altura do contêiner */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    min-width: calc(100%/9);
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .content_bg .slides img {
-    width: 100%; /* Imagens ocupam 100% do slide */
-    height: 100%; /* Imagens ocupam 100% da altura do slide */
-    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
