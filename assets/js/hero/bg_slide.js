@@ -1,176 +1,34 @@
 const content = document.querySelector('.content_bg .slides');
-const dot = document.querySelectorAll('.content_bg .dot');
+const slides = document.querySelectorAll('.content_bg .slides .slide');
+const slideCount = slides.length;
 
+// Clonando o primeiro e o último slide
+const firstSlideClone = slides[0].cloneNode(true);
+const lastSlideClone = slides[slideCount - 1].cloneNode(true);
+content.appendChild(firstSlideClone);
+content.insertBefore(lastSlideClone, slides[0]);
 
-const nextDot = () => {
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {
+let i = 1; // Começar com o primeiro slide visível
+const totalSlides = slideCount + 2; // Incluindo clones
 
-            removeCheck();
+// Inicialização da posição
+content.style.transform = `translateX(${-100 / totalSlides * i}%)`;
+content.style.transition = 'transform 2s ease'; // Tempo da transição ajustado
 
-            if (i + 1 >= dot.length) {
-                dot[0].classList.add('selected')
-                checkSelectedDot();
-                break;
-            }
+setInterval(() => {
+    i++;
 
-            dot[i + 1].classList.add('selected');
-            checkSelectedDot();
-            break;
-        }
+    // Se chegar ao clone do último slide
+    if (i >= totalSlides) {
+        // Reseta a posição rapidamente
+        setTimeout(() => {
+            i = 1; // Volta para o segundo slide (primeiro slide real)
+            content.style.transition = 'none'; // Desativa a transição
+            content.style.transform = `translateX(${-100 / totalSlides * i}%)`; // Voltar para o segundo slide
+        }, 500); // Atraso para permitir que a transição finalize
+    } else {
+        // Mover o carrossel normalmente
+        content.style.transition = 'transform 2s ease'; // Tempo da transição ajustado
+        content.style.transform = `translateX(${-100 / totalSlides * i}%)`;
     }
-}
-
-class Carrossel {
-    constructor() { 
-        this.interval = setInterval(nextDot, 5000)
-    }
-
-    interval = ''
-    
-    stop = function () {
-        clearInterval(this.interval)
-    }
-}
-
-let carr = new Carrossel();
-
-const prevSlide = () => {
-    carr.stop();
-
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {  
-            
-            removeCheck();
-            
-            if (i - 1 < 0) {
-                dot[dot.length-1].classList.add('selected')
-                checkSelectedDot();
-                break;
-            }
-
-            dot[i - 1].classList.add('selected');
-            checkSelectedDot();
-            break;
-        }
-    }
-
-    carr = new Carrossel();
-}
-
-const nextSlide = () => {
-    carr.stop();
-
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {
-            removeCheck();
-            if (i + 1 >= dot.length) {
-                dot[0].classList.add('selected')
-                checkSelectedDot();
-                break;
-            }
-            dot[i + 1].classList.add('selected');
-            checkSelectedDot();
-            break;
-        }
-    }
-
-    carr = new Carrossel();
-}
-
-for (let i = 0; i < dot.length; i++) {
-    dot[i].addEventListener('click', () => {
-        removeCheck();
-        dot[i].classList.add('selected');
-        checkSelectedDot();
-    })
-}
-
-const removeCheck = () => {
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {
-            dot[i].classList.remove('selected');
-        }
-    }
-}
-
-const checkSelectedDot = () => {
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {
-            switch (i) {
-                case 0:
-                    content.classList.add('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-                case 1:
-                    content.classList.add('two')
-                    content.classList.remove('one')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-                case 2:
-                    content.classList.add('three')
-                    content.classList.remove('one')
-                    content.classList.remove('tow')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-                case 3:
-                    content.classList.add('four')
-                    content.classList.remove('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-                case 4:
-                    content.classList.add('five')
-                    content.classList.remove('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-                case 5:
-                    content.classList.add('six')
-                    content.classList.remove('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('seven')
-                break;
-                case 6:
-                    content.classList.add('seven')
-                    content.classList.remove('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    break;
-                default:
-                    content.classList.add('one')
-                    content.classList.remove('two')
-                    content.classList.remove('three')
-                    content.classList.remove('four')
-                    content.classList.remove('five')
-                    content.classList.remove('six')
-                    content.classList.remove('seven')
-                    break;
-            }
-        }
-    }
-}
+}, 5000);

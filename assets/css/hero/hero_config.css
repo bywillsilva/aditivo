@@ -21,4 +21,8 @@
     .hero .text_content {
         align-items: center;
     }
+
+    .content_bg {
+        display: none;
+    }
 }

@@ -102,8 +102,8 @@ let removeCheck_news = () => {
 
 
 let checkSelectedDot_news = () => {
-    for (let i = 0; i < dot.length; i++) {
-        if (dot[i].classList.contains('selected')) {
+    for (let i = 0; i < dot_news.length; i++) {
+        if (dot_news[i].classList.contains('selected')) {
             switch (i) {
                 case 0:
                     content_news.classList.add('one')
