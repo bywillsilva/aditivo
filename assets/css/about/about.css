@@ -43,7 +43,15 @@ body {
     margin-bottom: 20px;
 }
 
-.about img {
+.about .content_right img {
+    position: relative;
+    top: -80px;
+    right: -10px;
+    width: 150px;
+    
+}
+
+.about .content_left img {
     width: 100%;
     max-width: 700px;
     border-radius: 20px;
