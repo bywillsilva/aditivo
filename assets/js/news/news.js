@@ -1,10 +1,10 @@
 const noticia_title = document.getElementById('noticia_title');
 const noticia_text = document.getElementById('noticia_text');
 const noticia_link = document.getElementById('noticia_link');
+const news = document.querySelector('#news .news_');
 
 class Noticia {
-    constructor(data, link, titulo, descricao) {
-        this.data = data;
+    constructor(link, titulo, descricao) {
         this.link = link;
         this.titulo = titulo;
         this.descricao = descricao;
@@ -13,21 +13,38 @@ class Noticia {
 
 let noticia;
 let noticias = [];
+let divs = [];
 
 let url = 'https://newsapi.org/v2/everything?' +
           'q=empresarial&' +
-        //   'from=2024-10-05&' +
           'sortBy=popularity&' +
           'apiKey=55328aac8b954a94b71a265545300c65';
 
 const getNoticia = () => {
     fetch(url)
-    .then((res) => {
-        return res.json()
-    }).then((res) => {
-        const news = res.items;
-        console.log(res)
-    })
+        .then((res) => {
+            return res.json()
+        }).then((res) => {
+            const news = res.articles;
+            for (let i = 0; i < 5; i++) {
+                noticia = new Noticia(news[i].url, news[i].title, news[i].description)
+                noticias.push(noticia)
+            }
+            for (let i = 0; i < 5; i++) {
+                noticia = ` <div class="text_content flex_column" style="width: 100%"><!--text_content-->
+                                <h3 class="title" id="noticia_title">${noticias[i].titulo}</h3>
+                                <p class="text" id="noticia_text">${noticias[i].descricao}</p>
+                                <a href="${noticias[i].link}" target="_blank" id="noticia_link"><button class="btn_primary">Saiba mais</button></a>
+                            </div><!--text_content-->` 
+                divs.push(noticia);
+            }
+        }).then((res) => {
+            for (let i = 0; i < 5; i++) {
+                let div = document.createElement('div');
+                div.innerHTML = divs[i]
+                news.appendChild(div);
+            }
+        })
 }
 
 getNoticia();

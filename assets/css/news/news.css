@@ -1,0 +1,16 @@
+#news .content_news {
+    overflow: hidden;
+    width: 500px;
+}
+
+#news .news_ {
+    width: calc(500px * 5);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#news .text_content {
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+}

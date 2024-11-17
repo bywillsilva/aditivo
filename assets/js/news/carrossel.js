@@ -1,6 +1,6 @@
 let dot_news = document.querySelectorAll('#news .dot');
 let arrow_news = document.querySelectorAll('#news .arrow');
-let content_news = document.querySelector('#news .content_news');
+let content_news = document.querySelector('#news .news_');
 
 
 arrow_news[0].addEventListener('click', () => {
