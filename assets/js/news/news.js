@@ -15,10 +15,7 @@ let noticia;
 let noticias = [];
 let divs = [];
 
-let url = 'https://newsapi.org/v2/everything?' +
-          'q=empresarial&' +
-          'sortBy=popularity&' +
-          'apiKey=55328aac8b954a94b71a265545300c65';
+let url = 'https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65';
 
 const getNoticia = () => {
     fetch(url)
@@ -31,7 +28,7 @@ const getNoticia = () => {
                 noticias.push(noticia)
             }
             for (let i = 0; i < 5; i++) {
-                noticia = ` <div class="text_content flex_column" style="width: 100%"><!--text_content-->
+                noticia = ` <div class="text_content flex_column" style="width: 500px"><!--text_content-->
                                 <h3 class="title" id="noticia_title">${noticias[i].titulo}</h3>
                                 <p class="text" id="noticia_text">${noticias[i].descricao}</p>
                                 <a href="${noticias[i].link}" target="_blank" id="noticia_link"><button class="btn_primary">Saiba mais</button></a>

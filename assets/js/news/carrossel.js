@@ -72,12 +72,17 @@ let nextSlide_news = () => {
 
     for (let i = 0; i < dot_news.length; i++) {
         if (dot_news[i].classList.contains('selected')) {
+
             removeCheck_news();
+
             if (i + 1 >= dot_news.length) {
-                dot_news[0].classList.add('selected')
+                dot_news[0].classList.add('selected');
+                checkSelectedDot_news();
                 break;
             }
+
             dot_news[i + 1].classList.add('selected');
+            checkSelectedDot_news();
             break;
         }
     }
