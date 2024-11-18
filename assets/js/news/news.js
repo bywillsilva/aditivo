@@ -16,36 +16,32 @@ let noticia;
 let noticias = [];
 let divs = [];
 
-const targetUrl = encodeURIComponent("https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65");
-const proxyUrl = `https://api.allorigins.win/get?url=${targetUrl}`;
+const url = 'https://aitivo-api.onrender.com/noticias'; // URL para o back-end
 
 const getNoticia = () => {
-    fetch(proxyUrl)
+    fetch(url)
+        .then((res) => res.json())
         .then((res) => {
-            return res.json()
-        }).then((res) => {
-            const news = res.articles;
+            noticias = res;  // As notícias vêm do back-end
             for (let i = 0; i < 5; i++) {
-                noticia = new Noticia(news[i].url, news[i].title, news[i].description, news[i].urlToImage)
-                noticias.push(noticia)
+                noticia = new Noticia(noticias[i].link, noticias[i].titulo, noticias[i].descricao, noticias[i].img);
+                divs.push(`
+                    <div class="text_content flex_column" style="width: 500px">
+                        <h3 class="title" id="noticia_title">${noticia.titulo}</h3>
+                        <p class="text" id="noticia_text">${noticia.descricao}</p>
+                        <a href="${noticia.link}" target="_blank" id="noticia_link"><button class="btn_primary">Saiba mais</button></a>
+                    </div>
+                `);
             }
-            for (let i = 0; i < 5; i++) {
-                noticia = ` <div class="text_content flex_column" style="width: 500px"><!--text_content-->
-                                <h3 class="title" id="noticia_title">${noticias[i].titulo}</h3>
-                                <p class="text" id="noticia_text">${noticias[i].descricao}</p>
-                                <a href="${noticias[i].link}" target="_blank" id="noticia_link"><button class="btn_primary">Saiba mais</button></a>
-                            </div><!--text_content-->` 
-                divs.push(noticia);
-            }
-        }).then((res) => {
+        })
+        .then(() => {
             for (let i = 0; i < 5; i++) {
                 let div = document.createElement('div');
-                div.innerHTML = divs[i]
+                div.innerHTML = divs[i];
                 news.appendChild(div);
             }
-
-            news_img.src = noticias[0].img;
         })
-}
+        .catch((err) => console.error('Erro ao carregar as notícias:', err));
+};
 
 getNoticia();
