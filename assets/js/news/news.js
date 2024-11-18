@@ -26,7 +26,7 @@ const getNoticia = () => {
             for (let i = 0; i < 5; i++) {
                 noticia = new Noticia(noticias[i].link, noticias[i].titulo, noticias[i].descricao, noticias[i].img);
                 divs.push(`
-                    <div class="text_content flex_column" style="width: 500px">
+                    <div class="text_content flex_column">
                         <h3 class="title" id="noticia_title">${noticia.titulo}</h3>
                         <p class="text" id="noticia_text">${noticia.descricao}</p>
                         <a href="${noticia.link}" target="_blank" id="noticia_link"><button class="btn_primary">Saiba mais</button></a>
