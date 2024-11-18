@@ -14,30 +14,30 @@
 
     /* pass stages */
     .one {
-        transform: translateX(0px);
+        transform: translateX(0px) !important ;
     }
 
     .two {
-        transform: translateX(-250px);
+        transform: translateX(-250px)!important ;
     }
 
     .three {
-        transform: translateX(-500px);
+        transform: translateX(-500px)!important;
     }
 
     .four {
-        transform: translateX(-750px);
+        transform: translateX(-750px)!important;
     }
 
     .five {
-        transform: translateX(-1000px);
+        transform: translateX(-1000px)!important;
     }
 
     .six {
-        transform: translateX(-1250px);
+        transform: translateX(-1250px)!important;
     }
 
     .seven {
-        transform: translateX(-1500px);
+        transform: translateX(-1500px)!important;
     }
 }
