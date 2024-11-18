@@ -1,0 +1,43 @@
+@media (max-width: 700px) {
+    #news .content_news {
+        width: 250px !important;
+    }
+    
+    #news .news_ {
+        width: calc(250px * 5) !important;
+    }
+    
+    #news .text_content {
+        max-width: 250px !important;
+        min-width: 250px !important;
+    }
+
+    /* pass stages */
+    .one {
+        transform: translateX(0px);
+    }
+
+    .two {
+        transform: translateX(-250px);
+    }
+
+    .three {
+        transform: translateX(-500px);
+    }
+
+    .four {
+        transform: translateX(-750px);
+    }
+
+    .five {
+        transform: translateX(-1000px);
+    }
+
+    .six {
+        transform: translateX(-1250px);
+    }
+
+    .seven {
+        transform: translateX(-1500px);
+    }
+}

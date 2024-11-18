@@ -12,7 +12,7 @@
 #news .text_content {
     width: 100%;
     max-width: 500px;
-    min-width: 250px;
+    min-width: 500px;
 }
 
 #news #news_img {
