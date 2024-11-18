@@ -12,7 +12,7 @@ arrow_news[1].addEventListener('click', () => {
     nextSlide_news();
 })
 
-let nextDot_news = () => {
+let nextDot_news = async () => {
     for (let i = 0; i < dot_news.length; i++) {
         if (dot_news[i].classList.contains('selected')) {
 
@@ -21,13 +21,13 @@ let nextDot_news = () => {
             if (i + 1 >= dot_news.length) {
                 dot_news[0].classList.add('selected')
                 
-                news_img.src = noticias[0].img
+                news_img.src = await noticias[0].img
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i + 1].classList.add('selected');
-            news_img.src = noticias[i+1].img
+            news_img.src = await noticias[i+1].img
             checkSelectedDot_news();
             break;
         }
@@ -48,7 +48,7 @@ class Carrossel_news {
 
 let carr_news = new Carrossel_news();
 
-let prevSlide_news = () => {
+let prevSlide_news = async () => {
     carr_news.stop();
 
     for (let i = 0; i < dot_news.length; i++) {
@@ -58,14 +58,14 @@ let prevSlide_news = () => {
             
             if (i - 1 < 0) {
                 dot_news[dot_news.length - 1].classList.add('selected');
-                news_img.src = noticias[dot_news.length - 1].img
+                news_img.src = await noticias[dot_news.length - 1].img
 
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i - 1].classList.add('selected');
-            news_img.src = noticias[i - 1].img
+            news_img.src = await noticias[i - 1].img
 
             checkSelectedDot_news();
             break;
@@ -75,7 +75,7 @@ let prevSlide_news = () => {
     carr_news = new Carrossel_news();
 }
 
-let nextSlide_news = () => {
+let nextSlide_news = async () => {
     carr_news.stop();
 
     for (let i = 0; i < dot_news.length; i++) {
@@ -85,14 +85,14 @@ let nextSlide_news = () => {
 
             if (i + 1 >= dot_news.length) {
                 dot_news[0].classList.add('selected');
-                news_img.src = noticias[0].img
+                news_img.src = await noticias[0].img
 
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i + 1].classList.add('selected');
-            news_img.src = noticias[i+1].img
+            news_img.src = await noticias[i+1].img
 
             checkSelectedDot_news();
             break;

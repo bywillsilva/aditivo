@@ -18,7 +18,7 @@ let divs = [];
 
 const url = 'https://aitivo-api.onrender.com/noticias'; // URL para o back-end
 
-const getNoticia = () => {
+const getNoticia = async () => {
     fetch(url)
         .then((res) => res.json())
         .then((res) => {
