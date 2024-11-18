@@ -18,13 +18,7 @@ let divs = [];
 let url = 'https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65';
 
 const getNoticia = () => {
-    fetch(url, 
-        {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
+    fetch(url)
         .then((res) => {
             return res.json()
         }).then((res) => {
