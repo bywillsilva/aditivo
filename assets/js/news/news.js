@@ -22,7 +22,7 @@ const getNoticia = () => {
     fetch(url, {
         method: 'GET',
         headers: {
-            'Origin': 'https://bywillsilva.github.io', // Especifica o domínio de origem
+            'Origin': 'https://bywillsilva.github.io/aditivo', // Especifica o domínio de origem
             'X-Requested-With': 'XMLHttpRequest'  // Cabeçalho comum em requisições AJAX
         }
     })
