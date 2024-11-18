@@ -16,16 +16,10 @@ let noticia;
 let noticias = [];
 let divs = [];
 
-let url = 'https://api.allorigins.win/raw?url=https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65';
+let url = '`https://api.allorigins.win/get?url=${encodeURIComponent("https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65")}`';
 
 const getNoticia = () => {
-    fetch(url, {
-        method: 'GET',
-        headers: {
-            'Origin': 'https://bywillsilva.github.io/aditivo', // Especifica o domínio de origem
-            'X-Requested-With': 'XMLHttpRequest'  // Cabeçalho comum em requisições AJAX
-        }
-    })
+    fetch(url)
         .then((res) => {
             return res.json()
         }).then((res) => {
