@@ -16,10 +16,11 @@ let noticia;
 let noticias = [];
 let divs = [];
 
-let url = '`https://api.allorigins.win/get?url=${encodeURIComponent("https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65")}`';
+const targetUrl = encodeURIComponent("https://newsapi.org/v2/everything?q=contábil&apiKey=55328aac8b954a94b71a265545300c65");
+const proxyUrl = `https://api.allorigins.win/get?url=${targetUrl}`;
 
 const getNoticia = () => {
-    fetch(url)
+    fetch(proxyUrl)
         .then((res) => {
             return res.json()
         }).then((res) => {
