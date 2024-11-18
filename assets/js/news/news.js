@@ -4,10 +4,11 @@ const noticia_link = document.getElementById('noticia_link');
 const news = document.querySelector('#news .news_');
 
 class Noticia {
-    constructor(link, titulo, descricao) {
+    constructor(link, titulo, descricao, img) {
         this.link = link;
         this.titulo = titulo;
         this.descricao = descricao;
+        this.img = img;
     }
 }
 
@@ -24,7 +25,7 @@ const getNoticia = () => {
         }).then((res) => {
             const news = res.articles;
             for (let i = 0; i < 5; i++) {
-                noticia = new Noticia(news[i].url, news[i].title, news[i].description)
+                noticia = new Noticia(news[i].url, news[i].title, news[i].description, news[i].urlToImage)
                 noticias.push(noticia)
             }
             for (let i = 0; i < 5; i++) {
@@ -41,6 +42,8 @@ const getNoticia = () => {
                 div.innerHTML = divs[i]
                 news.appendChild(div);
             }
+
+            news_img.src = noticias[0].img;
         })
 }
 

@@ -2,6 +2,7 @@ let dot_news = document.querySelectorAll('#news .dot');
 let arrow_news = document.querySelectorAll('#news .arrow');
 let content_news = document.querySelector('#news .news_');
 
+const news_img = document.getElementById('news_img');
 
 arrow_news[0].addEventListener('click', () => {
     prevSlide_news();
@@ -19,11 +20,14 @@ let nextDot_news = () => {
 
             if (i + 1 >= dot_news.length) {
                 dot_news[0].classList.add('selected')
+                
+                news_img.src = noticias[0].img
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i + 1].classList.add('selected');
+            news_img.src = noticias[i+1].img
             checkSelectedDot_news();
             break;
         }
@@ -54,11 +58,15 @@ let prevSlide_news = () => {
             
             if (i - 1 < 0) {
                 dot_news[dot_news.length - 1].classList.add('selected');
+                news_img.src = noticias[dot_news.length - 1].img
+
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i - 1].classList.add('selected');
+            news_img.src = noticias[i - 1].img
+
             checkSelectedDot_news();
             break;
         }
@@ -77,11 +85,15 @@ let nextSlide_news = () => {
 
             if (i + 1 >= dot_news.length) {
                 dot_news[0].classList.add('selected');
+                news_img.src = noticias[0].img
+
                 checkSelectedDot_news();
                 break;
             }
 
             dot_news[i + 1].classList.add('selected');
+            news_img.src = noticias[i+1].img
+
             checkSelectedDot_news();
             break;
         }
