@@ -1,13 +1,17 @@
 @media (max-width: 700px) {
     #news .content_news {
+        overflow: hidden;
         width: 250px !important;
     }
     
     #news .news_ {
         width: calc(250px * 5) !important;
+        align-items: center;
+        justify-content: space-between;
     }
     
     #news .text_content {
+        width: 100%;
         max-width: 250px !important;
         min-width: 250px !important;
     }
