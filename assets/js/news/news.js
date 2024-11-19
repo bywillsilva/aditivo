@@ -23,8 +23,22 @@ const getNoticia = async () => {
         .then((res) => res.json())
         .then((res) => {
             noticias = res;  // As notícias vêm do back-end
-            for (let i = 0; i < 5; i++) {
-                noticia = new Noticia(noticias[i].link, noticias[i].titulo, noticias[i].descricao, noticias[i].img);
+
+            // Verificar se o array de notícias tem dados
+            if (noticias.length === 0) {
+                news.innerHTML = '<p>Sem notícias disponíveis no momento.</p>';
+                return; // Não continuar com a renderização
+            }
+            
+            divs = []
+            for (let i = 0; i < Math.min(noticias.length, 5); i++) {
+                noticia = new Noticia(
+                    noticias[i].link || '',
+                    noticias[i].titulo || 'Título não disponível',
+                    noticias[i].descricao || 'Descrição não disponível',
+                    noticias[i].img || 'Imagem não disponível'
+                );
+                
                 divs.push(`
                     <div class="text_content flex_column">
                         <h3 class="title" id="noticia_title">${noticia.titulo}</h3>
