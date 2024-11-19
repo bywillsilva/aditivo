@@ -4,12 +4,6 @@
     justify-content: center;
     width: 100%;
     height: 96dvh;
-
-    /* background config */
-    background-image: url("./../../images/hero/hero_bg.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: -50px -50px;
 }
 
 /* content for left and right section*/

@@ -133,7 +133,7 @@
                 <div class="content_right"><!--content_right-->
                     <div class="text_content flex_column"><!--text_content-->
                         <h3 class="title">Missão</h3>
-                        <p class="text">Nossa missão é cumprir com obrigações legais e tributárias dos nossos clientes com qualidade  de forma eficiente e ágil atentando para as mudanças do cenário  corporativo.</p>
+                        <p class="text">Cumprir com obrigações legais e tributárias dos nossos clientes com qualidade  de forma eficiente e ágil atentando para as mudanças do cenário  corporativo.</p>
                     </div><!--text_content-->
                 </div><!--content_right-->
             </div><!--mission-->
@@ -270,8 +270,36 @@
         <div class="flex_row cookie_actions">
             <button id="reject-cookies" class="btn_secondary">Recusar</button>
             <button id="accept-cookies" class="btn_primary">Aceitar</button>
+            <button id="preferences-cookies" class="btn_secondary">Preferências</button> <!-- Novo botão -->
         </div>
     </asside>
+    
+    <!-- Modal para alterar as preferências de cookies -->
+    <div id="cookie-preferences-modal" class="cookie-preferences-modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-modal">&times;</span>
+            <h2>Preferências de Cookies</h2>
+            <form id="cookie-preferences-form">
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" id="functional-cookies" /> Cookies Funcionais
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" id="performance-cookies" /> Cookies de Desempenho
+                    </label>
+                </div>
+                <div class="cookie-option">
+                    <label>
+                        <input type="checkbox" id="tracking-cookies" /> Cookies de Rastreamento
+                    </label>
+                </div>
+                <button type="submit" id="save-preferences" class="btn_primary">Salvar Preferências</button>
+            </form>
+        </div>
+    </div>
+    
 
     <!--scripts-->
         <!--header-->

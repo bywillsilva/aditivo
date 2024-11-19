@@ -2,4 +2,12 @@
     .cookie-popup {
         align-items: center;
     }
+
+    .cookie-popup .cookie_actions {
+        flex-wrap: wrap;
+    }
+    
+    .cookie-popup .cookie_actions button{
+        margin-bottom: 15px;
+    }
 }
