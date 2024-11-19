@@ -42,10 +42,21 @@
             <link rel="stylesheet" href="./../css/header_mobile/header_mobile.css">
             <link rel="stylesheet" href="./../css/header_mobile/header_mobile_config.css">
         <!--header_mobile-->
-        <!--about-->
+        <!--info-->
+            <link rel="stylesheet" href="./../css/info/info.css">
+            <link rel="stylesheet" href="./../css/info/info_config.css">
+            <link rel="stylesheet" href="./../css/cards/info/info_card.css">
+            <link rel="stylesheet" href="./../css/cards/info/info_card_config.css">
+        <!--info-->
+        <!--living-->
             <link rel="stylesheet" href="./../css/living/living.css">
-            <link rel="stylesheet" href="./../css/living/living_config.css
-            ">
+            <link rel="stylesheet" href="./../css/living/living_config.css">
+        <!--living-->
+        <!--about-->
+            <link rel="stylesheet" href="./../css/about/about.css">
+            <link rel="stylesheet" href="./../css/about/about_config.css">
+            <link rel="stylesheet" href="./../css/cards/about/about_card.css">
+            <link rel="stylesheet" href="./../css/cards/about/about_card_config.css">
         <!--about-->
         <!--footer-->
             <link rel="stylesheet" href="./../css/footer/footer.css">
@@ -100,8 +111,20 @@
         </nav><!--nav-->
     </header><!--header-->
 
+    <section class="info flex_row"><!--info-->
+        <div class="content_left"><!--content_left-->
+            <div class="card flex_column"><!--card-->
+                <h3 class="title"><span class="title" style="color: var(--secondary);">Conheça</span> nossa estrutura</h3>
+                <p class="text">A Aditivo está estruturada fisicamente para atender empresas dos mais diversos ramos de atividade no comércio, serviço e indústria.</p>
+            </div><!--card-->
+        </div><!--content_left-->
+
+        <div class="content_right"><!--content_right-->
+            <img src="./../images/living/inst_1.png" alt="">
+        </div><!--content_right-->
+    </section><!--info-->
+
     <section class="content_pictures flex_row">
-        <img src="./../images/living/inst_1.png" alt="" srcset="">
         <img src="./../images/living/inst_2.png" alt="" srcset="">
         <img src="./../images/living/inst_3.png" alt="" srcset="">
         <img src="./../images/living/inst_4.png" alt="" srcset="">
@@ -119,6 +142,30 @@
         <img src="./../images/living/inst_16.png" alt="" srcset="">
         <img src="./../images/living/inst_17.png" alt="" srcset="">
     </section>
+
+    <section class="about" style="margin-top: 100px;"><!--about-->
+        <div class="content_left"><!--content_left-->
+            <video width="700px" height="500" poster="./../images/about/thumb.png" src="./../videos/thumb.mp4" controls></video>
+        </div><!--content_left-->
+        <div class="content_right flex_column"><!--content_right-->
+            <div class="card flex_column"><!--card-->
+                <h3 class="title"><span class="title" style="color: var(--secondary);">Aditivo </span>Contabilidade</h3>
+                <p class="text">Contando com um quadro de pessoal graduado em contabilidade, administração tributária e perícia contábil.</p>
+            </div><!--card-->
+        </div><!--content_right-->
+    </section><!--about-->
+
+    <section class="info flex_row"><!--info-->
+        <div class="content_left"><!--content_left-->
+            <div class="card flex_column"><!--card-->
+                <h3 class="title"><span class="title" style="color: var(--secondary);">Vídeo</span></h3>
+            </div><!--card-->
+        </div><!--content_left-->
+
+        <div class="content_right"><!--content_right-->
+            <video width="700px" height="500" src="./../videos/aditivo_video.mp4" controls></video>
+        </div><!--content_right-->
+    </section><!--info-->
 
     <footer class="flex_column" id="footer"><!--footer-->
         <div class="flex_column head"><!--footer_head-->
