@@ -3,6 +3,10 @@
         align-items: center;
     }
 
+    .content_mvv  .text_content {
+        width: 100% !important;
+    }
+
     .mission,
     .vision,
     .values {

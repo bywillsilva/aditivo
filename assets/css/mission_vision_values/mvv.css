@@ -11,10 +11,18 @@ body {
     margin-top: 100px;
 }
 
+.content_mvv  .text_content {
+    width: 50%;
+}
+
 .mission,
 .vision,
 .values {
     align-items: center;
+}
+
+.mvv .vision {
+    flex-direction: row-reverse;
 }
 
 .mission .content_left,
@@ -26,9 +34,10 @@ body {
     margin-left: 50px;
 }
 
-.mvv .vision {
-    flex-direction: row-reverse;
+.vision .content_right{
+    align-items: flex-end;
 }
+
 
 .mvv .content_left {
     padding: 30px 30px 0 30px;
