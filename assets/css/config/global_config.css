@@ -23,6 +23,10 @@ html {
     flex-direction: row;
 }
 
+.space {
+    margin: 10px 0;
+}
+
 body {
     /* color config */
     color: var(--white);
