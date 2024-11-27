@@ -39,9 +39,8 @@
 .about .content_right img {
     position: relative;
     top: -80px;
-    right: -10px;
-    width: 150px;
-    
+    right: -8px;
+    width: 150px; 
 }
 
 .about .content_left img {

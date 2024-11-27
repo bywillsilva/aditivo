@@ -1,4 +1,8 @@
 /* card config */
+.info {         
+    min-height: 520px;
+}
+
 .info .card {
     /* centering config */
     position:absolute;

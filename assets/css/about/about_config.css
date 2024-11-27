@@ -24,9 +24,15 @@
         width: 100%;
         height: 100%;
     }
+
+    .about .content_right img {
+        top: -20px;
+        right: 5px;
+    }
 }
 
 @media (max-width: 1250px) {
+
     .about img {
         width: 100%;
         max-width: none;
