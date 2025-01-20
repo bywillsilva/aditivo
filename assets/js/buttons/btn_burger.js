@@ -2,6 +2,10 @@ const btn_burger = document.getElementById('btn_burger');
 const nav = document.getElementById('links_mobile');
 const btn_hr = document.querySelectorAll('.btn_burger hr');
 
+function burger() {
+    nav.style.display = 'flex';
+}
+
 btn_burger.addEventListener('click', () => {
     nav.style.display = 'flex';
 })
