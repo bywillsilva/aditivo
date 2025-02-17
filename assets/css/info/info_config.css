@@ -22,3 +22,8 @@
     }
 }
 
+@media (min-width: 1100px) {
+    .info .content_right .adm {
+        width: 48%;
+    }
+}
