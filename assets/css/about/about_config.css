@@ -19,7 +19,7 @@
         align-items: center;
     }
 
-    .about video {
+    .about .video {
         position: static;
         width: 100%;
         height: 100%;
