@@ -1,10 +1,18 @@
 .services {
     /* centerign config */
-    width: 90%;
-    max-width: var(--width);
-
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    
     /* others */
     margin-top: 100px;
+}
+
+.services .content {
+    position: relative;
+    width: 90%;
+    max-width: var(--width);
+    padding: 60px 0;
 }
 
 .services .content_cards  {
@@ -12,4 +20,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#bg_services {
+    position: absolute;
+    z-index: -1;
+    right: -300px;
+    top: -0px;
+    width: 450px;
 }
