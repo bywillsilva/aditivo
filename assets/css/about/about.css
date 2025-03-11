@@ -46,7 +46,7 @@
 @media (min-width: 1100px) {
     .about .content_left img {
         width: 100%;
-        max-width: 700px;
+        max-width: 600px;
         border-radius: 20px;
     
         margin-bottom: 140px;
